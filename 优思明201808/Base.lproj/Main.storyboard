@@ -215,6 +215,12 @@
                     </view>
                     <connections>
                         <outlet property="circle1" destination="1eL-IH-0Ob" id="Mup-3i-iA5"/>
+                        <outlet property="day2" destination="lSY-Xg-Ynh" id="ec9-Wb-Gy4"/>
+                        <outlet property="day3" destination="LZP-tq-xDX" id="VF0-zE-sFI"/>
+                        <outlet property="day4" destination="6OY-Jb-FLJ" id="YrX-ll-Sws"/>
+                        <outlet property="day5" destination="dus-1o-xHe" id="Ie5-lA-exi"/>
+                        <outlet property="day6" destination="KDr-R1-N5T" id="1bT-Bd-Lg2"/>
+                        <outlet property="day7" destination="cfr-z5-yKo" id="SMC-N0-pMj"/>
                         <outlet property="firstday" destination="EJa-sk-4ic" id="dH2-ta-t05"/>
                         <outlet property="showtable" destination="t1d-ao-ifX" id="Zf2-FM-i24"/>
                     </connections>

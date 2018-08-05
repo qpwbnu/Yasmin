@@ -12,12 +12,23 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var circle1: UIView!
     @IBOutlet weak var firstday: UILabel!
+    @IBOutlet weak var day2: UILabel!
+    @IBOutlet weak var day3: UILabel!
+    @IBOutlet weak var day4: UILabel!
+    @IBOutlet weak var day5: UILabel!
+    @IBOutlet weak var day6: UILabel!
+    @IBOutlet weak var day7: UILabel!
     
     @IBOutlet weak var showtable: UILabel!
     
     var eatdate = 8
     var number = 0
     var countNumber = 0
+    
+//    获取日期
+    let date = Date()
+    let calendar = Calendar.current
+    
     
     
     
@@ -30,6 +41,7 @@ class ViewController: UIViewController {
         print(shifoudaka)
         showtable.font = UIFont.init(name:"PingFang-Bold.ttf", size: 50)
         
+        print(date)
         
         if shifoudaka == 1 {
             firstday.textColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
@@ -45,7 +57,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       firstday.text = String(eatdate % 30)
+//        获取月份
+        let month = calendar.component(.month, from: date)
+//        获取日期
+        let day = calendar.component(.day, from: date)
+//        日历赋值
+        firstday.text = String(day)
+        day2.text = String(DAY_1)
+        day3.text = String(DAY_2)
+        day4.text = String(DAY_3)
+        day5.text = String(DAY_4)
+        day6.text = String(DAY_5)
+        day7.text = String(DAY_6)
+        
+        
         
         
     }
